@@ -21,14 +21,32 @@ The system acquires sensor data such as current, voltage, temperature, and vibra
 
 ## Tech Stack
 
-* Arduino UNO Q
-* Python
-* Scikit-learn
-* Pandas
-* Streamlit
-* Matplotlib
-* MQTT
-* Git & GitHub
+### Hardware
+- Arduino UNO / Arduino UNO R4 WiFi
+- ZMPT101B Voltage Sensor
+- WCS1700 Current Sensor
+- DS18B20 Temperature Sensor *(Planned)*
+- SW-420 / MPU6050 Vibration Sensor *(Planned)*
+
+### Software
+- Arduino IDE
+- Python
+- PySerial
+- Pandas
+- Streamlit
+- Matplotlib
+- Scikit-learn
+- MySQL *(In Progress)*
+- Git & GitHub
+
+### Machine Learning
+- Decision Tree
+- Random Forest
+
+### Alerts
+- SMTP Email Notifications
+- SMS Alerts *(Planned)*
+
 
 ## Project Status
 
