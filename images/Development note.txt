@@ -1,0 +1,1 @@
+Initial testing and calibration were performed on Arduino UNO for ease of debugging. The final implementation is intended for Arduino UNO Q, and the code is portable between the two with minimal changes.
