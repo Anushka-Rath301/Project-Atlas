@@ -22,7 +22,7 @@ The system acquires sensor data such as current, voltage, temperature, and vibra
 ## Tech Stack
 
 ### Hardware
-- Arduino UNO / Arduino UNO R4 WiFi
+- Arduino UNO Q
 - ZMPT101B Voltage Sensor
 - WCS1700 Current Sensor
 - DS18B20 Temperature Sensor *(Planned)*
