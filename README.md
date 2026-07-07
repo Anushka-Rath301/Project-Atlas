@@ -25,8 +25,12 @@ The system acquires sensor data such as current, voltage, temperature, and vibra
 - Arduino UNO Q
 - ZMPT101B Voltage Sensor
 - WCS1700 Current Sensor
-- DS18B20 Temperature Sensor *(Planned)*
-- SW-420 / MPU6050 Vibration Sensor *(Planned)*
+- DS18B20 Temperature Probe Sensor
+- MPU6050 Vibration Sensor
+
+The following figure shows the complete hardware implementation of Project Atlas, including the motor-side sensor placement and controller-side interfacing.
+<img width="1080" height="1350" alt="Hardware_overview" src="https://github.com/user-attachments/assets/46ad4cbc-3228-40de-a64e-2e0d9df248c4" />
+
 
 ### Software
 - Arduino IDE
