@@ -51,6 +51,11 @@ The following figure shows the complete hardware implementation of Project Atlas
 - SMTP Email Notifications
 - SMS Alerts *(Planned)*
 
+### Latest Progress
+- Integrated Voltage (ZMPT101B), Current (WCS1700), Temperature (DS18B20) and Vibration (MPU6050) sensors.
+- Implemented real-time sensor acquisition using Arduino UNO Q.
+- Developed Python script for serial communication and automatic CSV dataset generation.
+- Collected real-world vibration data under multiple operating conditions for AI model training.
 
 ## Project Status
 
