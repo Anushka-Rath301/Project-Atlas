@@ -1,10 +1,10 @@
 * Arduino UNO Q
-* Current Sensor
-* Voltage Sensor
-* DHT22
-* Vibration Sensor
+* Current Sensor WCS1700
+* Voltage Sensor ZMPT101B
+* Temperature Sensor DS18B20
+* Vibration Sensor MPU6050
 * Jumper Wires
 * Breadboard
-* DC Motor
+* Single phase AC motor 
 * Power Supply
 
