@@ -9,9 +9,12 @@ tab1,tab2,tab3=st.tabs(["Overview","Analytics","AI Insights"])
 df=pd.read_csv("D:/Anushka Projects/pandas/sensor_log.csv")
 
 recent = df.tail(20)
-features=[[recent["Voltage"].mean(),recent["Current"].mean(),recent["Vibration"].mean(),recent["Temperature"].mean()]]
-prediction=model.predict(features)[0] #to extract the string
-prob=model.predict_proba(features)
+features = pd.DataFrame(
+    [[recent["Voltage"].mean(),recent["Current"].mean(),recent["Vibration"].mean(),recent["Temperature"].mean()]],
+    columns=["Voltage","Current","Vibration","Temperature"])
+
+prediction = model.predict(features)[0]
+prob = model.predict_proba(features)
 
 classes=model.classes_  #we get the order in which healthy,faulty and warning are arranged
 index=list(classes).index(prediction) #we get the index of corresponding health status
