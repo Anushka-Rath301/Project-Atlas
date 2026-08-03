@@ -1,10 +1,9 @@
 # Project Atlas
 
 ## Edge AI-based Predictive Maintenance and Health Monitoring System for Small Electrical Machines
+Project Atlas is an Edge AI solution developed to monitor the health of small electrical machines in real time using the Arduino UNO Q. The system continuously acquires voltage, current, temperature and vibration data, performs local AI inference using a trained Random Forest model, and predicts the health condition of the machine before severe failures occur.
 
-Project Atlas is an Edge AI solution designed to monitor the health of small electrical machines in real time using the Arduino UNO Q.
-
-The system acquires sensor data such as current, voltage, temperature, and vibration, performs on-device AI inference to predict machine health, logs operational data, and visualizes historical trends through an analytics dashboard.
+The acquired sensor data and prediction results are logged into CSV files and visualized through a Streamlit-based analytics dashboard. The dashboard provides real-time monitoring, historical trends, health score, maintenance recommendations and automatic email alerts whenever a faulty condition is detected.
 
 ## Objectives
 
@@ -14,10 +13,6 @@ The system acquires sensor data such as current, voltage, temperature, and vibra
 * Cloud connectivity via Wi-Fi/MQTT
 * Interactive analytics dashboard
 * Maintenance recommendations based on historical trends
-
-## System Architecture
-
-![System Architecture](docs/architecture_v1.png)
 
 ## Tech Stack
 
@@ -40,25 +35,39 @@ The following figure shows the complete hardware implementation of Project Atlas
 - Streamlit
 - Matplotlib
 - Scikit-learn
-- MySQL *(In Progress)*
 - Git & GitHub
+
+### Hardware
+- Arduino UNO Q
+- ZMPT101B Voltage Sensor
+- WCS1700 Hall Effect Current Sensor
+- DS18B20 Temperature Probe
+- MPU6050 Accelerometer & Gyroscope (Vibration Sensor)
+- 180 W Single Phase Induction Motor
 
 ### Machine Learning
 - Decision Tree
 - Random Forest
 
-### Alerts
-- SMTP Email Notifications
-- SMS Alerts *(Planned)*
+### Features
+- Real-time sensor acquisition
+- Edge AI based health prediction
+- Prediction confidence estimation
+- Automatic CSV data logging
+- Historical trend visualization
+- Rule-based Health Score generation
+- Maintenance recommendation engine
+- Automatic Email Alert System
 
 ### Latest Progress
-- Integrated Voltage (ZMPT101B), Current (WCS1700), Temperature (DS18B20) and Vibration (MPU6050) sensors.
-- Implemented real-time sensor acquisition using Arduino UNO Q.
-- Developed Python script for serial communication and automatic CSV dataset generation.
-- Collected real-world vibration data under multiple operating conditions for AI model training.
+-Integrated ZMPT101B, WCS1700, DS18B20 and MPU6050 with Arduino UNO Q.
+-Developed a complete Edge AI inference pipeline using Random Forest.
+-Collected and labelled real-world sensor data under Healthy, Warning and Faulty operating conditions.
+-Implemented Arduino Router Bridge communication between the microcontroller and Linux-based Python runtime.
+-Developed a Streamlit dashboard for real-time monitoring, historical analysis and maintenance recommendations.
+-Implemented automatic email notifications for newly detected faulty conditions.
 
 ## Project Status
+Prototype Completed
 
-🚧 Currently under development.
-
-This repository will be updated as the project progresses.
+The core hardware integration, Edge AI deployment, analytics dashboard and automated alert system have been successfully implemented. Future work includes cloud database integration, remote dashboard access, multi-machine monitoring and Remaining Useful Life (RUL) prediction.
