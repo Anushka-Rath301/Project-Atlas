@@ -60,12 +60,12 @@ The following figure shows the complete hardware implementation of Project Atlas
 - Automatic Email Alert System
 
 ### Latest Progress
--Integrated ZMPT101B, WCS1700, DS18B20 and MPU6050 with Arduino UNO Q.
--Developed a complete Edge AI inference pipeline using Random Forest.
--Collected and labelled real-world sensor data under Healthy, Warning and Faulty operating conditions.
--Implemented Arduino Router Bridge communication between the microcontroller and Linux-based Python runtime.
--Developed a Streamlit dashboard for real-time monitoring, historical analysis and maintenance recommendations.
--Implemented automatic email notifications for newly detected faulty conditions.
+- Integrated ZMPT101B, WCS1700, DS18B20 and MPU6050 with Arduino UNO Q.
+- Developed a complete Edge AI inference pipeline using Random Forest.
+- Collected and labelled real-world sensor data under Healthy, Warning and Faulty operating conditions.
+- Implemented Arduino Router Bridge communication between the microcontroller and Linux-based Python runtime.
+- Developed a Streamlit dashboard for real-time monitoring, historical analysis and maintenance recommendations.
+- Implemented automatic email notifications for newly detected faulty conditions.
 
 ## Project Status
 Prototype Completed
